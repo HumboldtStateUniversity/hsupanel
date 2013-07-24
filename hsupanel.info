@@ -1,0 +1,32 @@
+name = hsupanel
+description = HSU general use Drupal theme
+core = 7.x
+
+; CSS
+stylesheets[all][] = css/main.css
+
+; JS
+scripts[] = js/vendor/modernizr-2.6.2-respond-1.1.0.min.js
+;scripts[] = js/vendor/jquery.equalizecols.js
+scripts[] = js/plugins.js
+scripts[] = js/main-ck.js
+
+; Regions
+regions[banner_image] = Banner Image
+regions[sidebar_first] = Left sidebar
+regions[footer_firstcolumn] = Footer - Column 1
+regions[footer_secondcolumn] = Footer - Column 2
+regions[footer_thirdcolumn] = Footer - Column 3
+regions[footer_social] = Footer - Social Media
+regions[help] = Help
+
+; Required Regions
+regions[content] = Content
+regions[page_top] = Page Top
+regions[page_bottom] = Page Bottom
+
+; Features
+features[] = name
+features[] = slogan
+features[] = main_menu
+features[] = secondary_menu

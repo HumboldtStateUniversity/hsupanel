@@ -1,0 +1,868 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+//get partials
+@import"normalize";
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #444;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+   /* ==============
+	Sass: Variables and Mixins
+      ============== */
+$sans-serif:'Belgrano',Georgia, serif;
+$sans:'Source Sans Pro', sans-serif;
+$black:#333333;
+$base-brown:#3a3129;
+$light-brown:#867a6f;
+$dark-green:#055341;
+$green:#4c8b53;
+$light-green:#85a36a;
+$light-blue:#28767d;
+$lighter-blue:#008997;
+$yellow:#cbccbb;
+$white:#ffffff;
+$footer-module-light:rgba($white, .2);
+$footer-module-dark:rgba($white, .15);
+$footer-module-darker:rgba($white, .1);
+$base-brown-darken:darken($base-brown, 5%);
+$base-brown-lighten:rgba($base-brown, .7);
+$pad:.5em;
+   *,:after,:before {
+   box-sizing:border-box;
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+}
+   $grid-pad: 20px;
+
+   .grid {
+/*     background: white;*/
+     margin: 0 0 $grid-pad 0;
+  
+     &:after {
+       /* Or @extend clearfix */
+       content: "";
+       display: table;
+       clear: both;
+     }
+   }
+
+   
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 14px/22px $sans, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */	  
+/* ==============
+    MOBILE: Menu
+   ============== */
+/* default style */
+.tinynav{
+	width:100% !important;
+	display:block;
+	margin-top:$pad*2;
+}
+ul.menu{
+	display:none;
+}
+ul.menu ul.menu{
+	margin:0;
+}
+nav ul.menu ul.menu a:link, nav ul.menu ul.menu a:visited{
+	 background-color:rgba($light-green,.2);
+	color:#444;
+	text-indent:1em;
+	font-size:.9em;
+}
+nav ul.menu ul.menu a:before {
+    content: '- ';
+}
+ul.menu li {
+	margin:0;
+}
+ul.menu li.leaf , ul.menu li.expanded, ul.menu li.collapsed{
+	list-style-image: none;
+	list-style-type: none;
+	padding: 0;
+	margin:0;
+}
+
+/*li.expanded, li.collapsed, li.leaf {
+	padding: 0;
+}*/
+/*end mobile menu*/
+.header-container{
+	padding:$pad*2 0;
+}
+.masthead{
+	background-color:$dark-green;
+	padding:$pad;
+}
+.masthead p{
+	margin:0;
+}
+.masthead img{
+	width:100%;
+}
+.side-panel > div > div{
+	background-color: $yellow;
+	padding-bottom:$pad;
+	margin:$pad*3 0;
+	color:$black;
+}
+.ie7 .side-panel > div > div, .ie8 .side-panel > div > div{
+	background-color:#cbccbb;
+}
+.footer-container{
+	background-color:$base-brown;	
+	padding:$grid-pad;
+}
+.footer-container footer {
+	color:$white;
+}
+.contact{
+/*	margin-top:$pad*2;*/
+/*	padding-top:$pad*2;*/
+	line-height:1.2;
+}
+img.circleH{
+	width:42px;
+	display: block;
+	vertical-align:center;
+	float:left;
+	margin-right:$pad*2;
+	border: none;
+}
+.banner{
+	width:auto;
+	margin:$pad*2.5 0 0 0;
+	padding:0 $pad*2.5 0;
+	background:$light-green;
+}
+.banner img, .main-content img{width:100%;}
+.main-content {
+	background-color:#fff;
+	position:relative;
+}
+.header-container{
+	position:relative;
+	background:$light-green;
+	color:$white;
+}
+ul{
+	list-style:none;
+}
+div.status{
+	margin-right:.5em;
+}
+/* Form elements*/
+input[type="text"], input[type="password"]{
+	width:70%;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"]{
+	margin-right:$pad;
+}
+#search-block-form{
+	padding:$pad*2 0;
+}
+.form-submit{
+	margin-top:$pad;
+}
+/*Search Results*/
+.search-results h3.title{
+	margin-bottom:$pad;
+	font-size:1.8em;
+}
+.search-snippet-info{
+	margin-bottom:$pad*4;
+}
+ol.search-results{
+	padding-left:0;
+}
+/* ====================
+    Social Icons
+   ==================== */
+.social{
+	margin:$pad*2 0  $pad*2 $pad*7;
+	
+/*	text-align:center;*/
+/*	width:100%;*/
+}
+.region-footer-social{
+	margin:$pad*2 0;
+}
+.region-footer-social li:first-child{
+	margin-left:0;
+}
+.region-footer-social ul li{
+	text-decoration:none;
+	float:left;
+	padding:0;
+	margin:$pad - .5 0 0 $pad;
+	&:hover{text-decoration:none;}
+}
+
+/* ====================
+    Base typography
+
+   ==================== */
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+	margin:$pad*2.5 0 0 0;
+   	line-height:1.1em;
+}
+h1{font-size:2.2em;}
+h2{font-size:2em;}
+h3{font-size:1.8em;}
+h4{font-size:1.6em;}
+h5{font-size:1.4em;}
+h6{font-size:1.2em;}
+/*.main-content {line-height:1.4em;font-size:.9em;}*/
+
+/*main content*/
+.main-content{
+	h2, h3, h4, h5, h6{
+		color:$base-brown;
+	}
+   ul{
+	   list-style:disc;
+   }
+   ol,ul{
+   	margin:$pad*3 0;
+   }
+}
+ul.links{
+	padding-left:0;
+	list-style:none;
+}
+.item-list ul{
+	padding-left:40px;
+}
+.item-list ul li{
+	margin:0;
+}
+
+.more-link{
+	text-align:left;
+}
+.more-link:before{
+	content:'» ';
+}
+.menu {font-size:1.1em;}
+.title{
+	font-size:2.5em;
+	font-weight:600;
+	color:$base-brown;
+	width:80%;
+	line-height:1em;
+/*	float:left;*/
+	margin-bottom:0;
+}
+/*Side Bar*/
+.side p{
+	line-height:1.2em;
+}
+.side-panel .block > h2{
+	background-color:$base-brown-darken;
+	color:#fff;
+	padding:$pad;
+	font-size:1.4em;
+	font-weight:normal;
+}
+.side, .footer-container{
+	 h1{
+		font-size:1.3em;
+	}
+	 h2{
+		font-size:1.3em;
+	}
+	 h3{
+		font-size:1.3em;
+	}
+	 h4{
+		font-size:1em;
+	}
+	 h5{
+		font-size:1em;
+	}
+	 h6{
+		font-size:1em;
+	}
+}
+.side-panel ul{
+	margin:0;
+	padding:0;
+}
+.side-panel .content{
+	padding:0 $pad*2;
+}
+.side-panel li{
+	line-height:1.4;
+	margin:$pad*1.5 0;
+	padding:0;
+}
+.site_name{
+	font-size:2.3em;
+	margin:$pad 0 0 0;
+	font-weight:400;
+	line-height:1;
+}
+.site_name a:link, .site_name a:visited{
+	color:$white;
+}
+.slogan{
+	display:block;
+	font-weight:300;
+	line-height:1;
+	letter-spacing: normal;
+	font-size:.4em;
+	font-style:italic;
+	padding:0;
+	margin:0 0 $pad*2 0;
+}
+.footer-container ul{
+	padding-left:0;
+}
+.footer-container p{
+	font-size:.9em;
+}
+/* events */
+ul.events{
+	margin:0;
+	padding:0;
+}
+.events li{
+	border:solid 1px $white;
+	border-width:1px 0;
+	padding:$pad;
+	background:rgba($white, .1);
+	margin:$pad*2 0;
+}
+.block-aggregator h2{
+	background:white url(../img/cal-icon.png) no-repeat 5px 7px ;
+	padding-left:30px !important;}
+/* ====================
+    Table styles
+   ==================== */
+table{
+	margin:$pad*4 0 $pad*2 0;
+	width:100%;
+}
+th,td{
+	padding:$pad;
+}
+td{
+	border-bottom:solid 1px #e0e0e0;
+}
+th{
+	background:#f2f2f2;
+}
+tr.even, tr.odd{
+	background:none;
+}
+/* ====================
+    Link styles
+   ==================== */
+a:link, a:visited{
+	color:$lighter-blue;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.side-panel a{
+	color:#fff;
+}
+.footer-container a:link, .footer-container a:visited{
+	color: $yellow;
+}
+.block-menu a{
+	display:block;
+	padding-top:$pad;
+	&:before{
+		content:'» ';}
+}
+.block-menu ul{
+	list-style: disc inside none;
+}
+/* ====================
+    Skip nav
+   ==================== */
+.skip a, .skip a:hover, .skip a:visited {
+	position: absolute;
+	left: 0px;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	text-align: right;
+}
+/* Tabs */
+div#tabs{
+	clear:both;
+//	margin-top:2.5em;
+}
+.front ul.primary ul.tabs{
+/*	margin:0;*/
+}
+ul.primary, ul.tabs{
+	border:0;
+/*	margin:20px 0;*/
+	padding:0;
+}
+ul.primary li, ul.tabs li{
+/*	margin:0;*/
+	display:inline;
+}
+ul.primary li a{
+	padding:6px 20px;
+	border:1px solid #333;
+	background-color:#393939;
+	color:#fff;
+	text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+	/*-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; 
+	background-clip: padding-box;*/
+	width:100%;
+	display: block;
+	margin: $pad 0;
+}
+ul.primary li a:hover, ul.primary li.active a:hover, #main ul.primary li.active a{
+	background-image:none;
+	background-color:#666;
+	color: #fff;
+	border:1px solid #333;
+}
+ul.primary li.active a{
+	color:$light-green;
+	border-bottom-color:#bbb;
+	text-shadow:none;
+}
+/* pager styles */
+.item-list .pager a{
+	color:$white;
+	padding:$pad - .25 $pad;
+	background-color:$light-blue;
+	margin:0;
+	text-decoration:none;
+}
+.item-list .pager a:hover{
+	background:$light-green;
+}
+.main-content .item-list .pager .pager-current{
+	background-color:rgba($light-blue, .2);
+	color:#444;
+	padding:$pad - .25 $pad;
+	font-weight:normal;
+}
+.item-list .pager li{
+	margin:0 $pad - .3 0 0;
+	padding:0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media only screen and (min-width: 30em) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+	.tinynav{
+		width:100% !important;
+		display:none;
+	}
+	ul.menu{
+		display:block;
+	}
+	nav li:first-child a {
+        margin-left: 0;
+    }
+    nav li:last-child a {
+        margin-right: 0;
+		border-bottom:none;
+    }
+	ul.menu{
+		padding:0;
+	}
+	    nav ul.menu a:link, nav ul.menu a:visited{
+			background-color:$light-green;
+			color: #fff;
+			border-bottom:1px solid #686a6a;
+			border-top:1px solid #fff;
+			display: block;
+			margin: 0;
+			padding:$pad;
+			text-decoration:none;
+			font-size:1em;
+	    }
+		nav ul.menu a.active{
+			background-color: #fff !important;
+			color:$lighter-blue !important;
+			z-index:500;
+			position:relative;
+			border-bottom:solid 1px #ccc !important;
+			border-top:solid 1px #ccc !important;
+		}
+	    nav ul.menu a:hover{
+	    	background-color:#f3f2f1;
+			color: #333;
+	/*		border-top:1px solid #686a6a;*/
+	    }
+/* ========================
+    INTERMEDIATE: Main
+   ======================== */	
+	.masthead div{
+		text-align: left;
+		margin: 0 auto;
+	}
+	.masthead img{
+		width:348px;
+	}
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+
+	/* ============
+	    WIDE: Main
+	   ============ */
+		body{background:white;}
+	    .side {
+	        float: left;
+	        width: 23.40426%;
+			z-index:0;
+			position:relative
+	    }
+		.banner{
+			margin:$pad*2.5 $pad 0 0;
+		}
+
+		input[type="text"], input[type="password"]{
+			width:66%;
+		}
+		input:-webkit-autofil{
+			background-color:red !important;
+		}
+		/* ====================
+		    Grid components
+		   ==================== */
+		.col-2-3 {
+			width: 66.66%;
+		}
+		.col-1-3 {
+			width: 33.33%;
+		}
+		.ie7 .col-1-3{
+			width:29%;
+		}
+		.col-1-2 {
+			width: 50%;
+		}
+		.col-1-4 {
+			width: 25%;
+		}
+		.col-1-8 {
+			width: 12.5%;
+		}
+
+		.module {
+			 padding: $grid-pad;
+/*			 background-color: $footer-module-light;*/
+		}
+/*		article.module + article{
+			 background-color: $footer-module-dark;
+		}
+		article.module + article + article{
+			 background-color:$footer-module-darker;
+		}*/
+		/* Opt-in outside padding */
+		.grid-pad {
+			 padding: $grid-pad 0 $grid-pad $grid-pad;
+			 [class*='col-']:last-of-type {
+			   padding-right: $grid-pad;
+		 }
+		}
+	   
+	    [class*='col-'] {
+	    	float: left;
+	      padding-right: $grid-pad;
+	      .grid &:last-of-type {
+	      	padding-right: 0;
+		
+	      }
+	    }
+		.main-content{
+			float:right;
+			left:auto;
+			width: 76.59574%;
+			border-left: auto;
+			background: $white url(../img/rt-bg.gif) repeat-y scroll top right;
+			margin-top:-$pad*2;
+			padding:0 50px 20px 20px;
+			-webkit-box-shadow: -1px 0px 10px 0px #999;
+			-moz-box-shadow: -1px 0px 10px 0px #999;
+			box-shadow: -1px 0px 10px 0px #999;
+			z-index:300;
+			position:relative;
+		}
+		.ie7 .main-content{
+			width: 69%;
+			border-left: solid 1px #ccc;
+		}
+		.footer-container{
+/*			background-color:$base-brown;	*/
+			padding:0;
+		}
+/* ============
+    WIDE: Menu
+   ============ */
+	
+    nav ul.menu{    
+		float: left;
+	    width: 23.40426%;
+	}
+	ul.menu li:first-child a{
+		border-top:none;
+	}
+    ul.menu li:last-child a {
+		border-bottom:none;
+    }
+	ul.menu{
+		padding: 0;
+		margin:20px 0 0 0;
+	}
+    ul.menu ul.menu {
+   	 float:none;
+/*   	 margin:0;*/
+   	 padding:0;
+   	 width:auto;
+    } 
+	ul.primary li a{
+	  width:auto;
+	  display: inline;
+	  margin:0;
+	}
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        max-width: 960px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
