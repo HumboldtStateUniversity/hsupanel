@@ -662,7 +662,7 @@ ul.menu li.leaf, ul.menu li.expanded, ul.menu li.collapsed {
 
 /* line 187, ../scss/main.scss */
 .footer-container {
-  background-color: #08392f;
+  background-color: #0c5a48;
   padding: 20px; }
 
 /* line 191, ../scss/main.scss */
@@ -1176,7 +1176,7 @@ ul.primary li.active a {
      ============ */
   /* line 618, ../scss/main.scss */
   body {
-    background: #08392f; }
+    background: #0c5a48; }
 
   /* line 619, ../scss/main.scss */
   .main-container {
@@ -1231,32 +1231,25 @@ ul.primary li.active a {
 
   /* line 661, ../scss/main.scss */
   .module {
-    padding: 20px;
-    /*			 background-color: $footer-module-light;*/ }
+    padding: 20px; }
 
-  /*		article.module + article{
-  			 background-color: $footer-module-dark;
-  		}
-  		article.module + article + article{
-  			 background-color:$footer-module-darker;
-  		}*/
   /* Opt-in outside padding */
-  /* line 672, ../scss/main.scss */
+  /* line 665, ../scss/main.scss */
   .grid-pad {
     padding: 20px 0 20px 20px; }
-    /* line 674, ../scss/main.scss */
+    /* line 667, ../scss/main.scss */
     .grid-pad [class*='col-']:last-of-type {
       padding-right: 20px; }
 
-  /* line 679, ../scss/main.scss */
+  /* line 672, ../scss/main.scss */
   [class*='col-'] {
     float: left;
     padding-right: 20px; }
-    /* line 682, ../scss/main.scss */
+    /* line 675, ../scss/main.scss */
     .grid [class*='col-']:last-of-type {
       padding-right: 0; }
 
-  /* line 687, ../scss/main.scss */
+  /* line 680, ../scss/main.scss */
   .main-content {
     float: right;
     left: auto;
@@ -1272,39 +1265,39 @@ ul.primary li.active a {
     z-index: 300;
     position: relative; }
 
-  /* line 702, ../scss/main.scss */
+  /* line 695, ../scss/main.scss */
   .ie7 .main-content {
     width: 69%;
     border-left: solid 1px #ccc; }
 
-  /* line 706, ../scss/main.scss */
+  /* line 699, ../scss/main.scss */
   .footer-container {
     padding: 0; }
 
   /* ============
       WIDE: Menu
      ============ */
-  /* line 713, ../scss/main.scss */
+  /* line 706, ../scss/main.scss */
   nav ul.menu {
     float: left;
     width: 23.40426%; }
 
-  /* line 717, ../scss/main.scss */
+  /* line 710, ../scss/main.scss */
   ul.menu li:first-child a {
     border-top: none; }
 
-  /* line 723, ../scss/main.scss */
+  /* line 716, ../scss/main.scss */
   ul.menu {
     padding: 0;
     margin: 20px 0 0 0; }
 
-  /* line 727, ../scss/main.scss */
+  /* line 720, ../scss/main.scss */
   ul.menu ul.menu {
     float: none;
     padding: 0;
     width: auto; }
 
-  /* line 732, ../scss/main.scss */
+  /* line 725, ../scss/main.scss */
   ul.primary li a {
     width: auto;
     display: inline;
@@ -1313,7 +1306,7 @@ ul.primary li.active a {
   /* ===============
       Maximal Width
      =============== */
-  /* line 745, ../scss/main.scss */
+  /* line 738, ../scss/main.scss */
   .wrapper {
     max-width: 1140px;
     /* 1140px - 10% for margins */
@@ -1321,26 +1314,26 @@ ul.primary li.active a {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 755, ../scss/main.scss */
+/* line 748, ../scss/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
   overflow: hidden;
   *text-indent: -9999px; }
 
-/* line 762, ../scss/main.scss */
+/* line 755, ../scss/main.scss */
 .ir:before {
   content: "";
   display: block;
   width: 0;
   height: 150%; }
 
-/* line 769, ../scss/main.scss */
+/* line 762, ../scss/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden; }
 
-/* line 774, ../scss/main.scss */
+/* line 767, ../scss/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1351,7 +1344,7 @@ ul.primary li.active a {
   position: absolute;
   width: 1px; }
 
-/* line 786, ../scss/main.scss */
+/* line 779, ../scss/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1361,21 +1354,21 @@ ul.primary li.active a {
   position: static;
   width: auto; }
 
-/* line 795, ../scss/main.scss */
+/* line 788, ../scss/main.scss */
 .invisible {
   visibility: hidden; }
 
-/* line 800, ../scss/main.scss */
+/* line 793, ../scss/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table; }
 
-/* line 805, ../scss/main.scss */
+/* line 798, ../scss/main.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 809, ../scss/main.scss */
+/* line 802, ../scss/main.scss */
 .clearfix {
   *zoom: 1; }
 
@@ -1383,7 +1376,7 @@ ul.primary li.active a {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 818, ../scss/main.scss */
+  /* line 811, ../scss/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1391,59 +1384,59 @@ ul.primary li.active a {
     box-shadow: none !important;
     text-shadow: none !important; }
 
-  /* line 826, ../scss/main.scss */
+  /* line 819, ../scss/main.scss */
   a,
   a:visited {
     text-decoration: underline; }
 
-  /* line 830, ../scss/main.scss */
+  /* line 823, ../scss/main.scss */
   a[href]:after {
     content: " (" attr(href) ")"; }
 
-  /* line 834, ../scss/main.scss */
+  /* line 827, ../scss/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 844, ../scss/main.scss */
+  /* line 837, ../scss/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
 
-  /* line 849, ../scss/main.scss */
+  /* line 842, ../scss/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
 
-  /* line 854, ../scss/main.scss */
+  /* line 847, ../scss/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
 
-  /* line 859, ../scss/main.scss */
+  /* line 852, ../scss/main.scss */
   tr,
   img {
     page-break-inside: avoid; }
 
-  /* line 863, ../scss/main.scss */
+  /* line 856, ../scss/main.scss */
   img {
     max-width: 100% !important; }
 
   @page {
     margin: 0.5cm; }
 
-  /* line 873, ../scss/main.scss */
+  /* line 866, ../scss/main.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
 
-  /* line 879, ../scss/main.scss */
+  /* line 872, ../scss/main.scss */
   h2,
   h3 {
     page-break-after: avoid; } }

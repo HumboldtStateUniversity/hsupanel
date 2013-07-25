@@ -185,7 +185,7 @@ ul.menu li.leaf , ul.menu li.expanded, ul.menu li.collapsed{
 	background-color:#cbccbb;
 }
 .footer-container{
-	background-color:$dark-green;	
+	background-color:$green;	
 	padding:$grid-pad;
 }
 .footer-container footer {
@@ -615,7 +615,7 @@ ul.primary li.active a{
 	/* ============
 	    WIDE: Main
 	   ============ */
-		body{background:#08392f;}
+		body{background:$green;}
 		.main-container{
 			background:lighten($light-gold,13%);
 		}
@@ -660,14 +660,7 @@ ul.primary li.active a{
 
 		.module {
 			 padding: $grid-pad;
-/*			 background-color: $footer-module-light;*/
 		}
-/*		article.module + article{
-			 background-color: $footer-module-dark;
-		}
-		article.module + article + article{
-			 background-color:$footer-module-darker;
-		}*/
 		/* Opt-in outside padding */
 		.grid-pad {
 			 padding: $grid-pad 0 $grid-pad $grid-pad;
