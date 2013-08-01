@@ -546,13 +546,7 @@ ul.primary li.active a{
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
-	.tinynav{
-		width:100% !important;
-		display:none;
-	}
-	ul.menu{
-		display:block;
-	}
+
 	nav li:first-child a {
         margin-left: 0;
     }
@@ -702,7 +696,13 @@ ul.primary li.active a{
 /* ============
     WIDE: Menu
    ============ */
-	
+	.tinynav{
+		width:100% !important;
+		display:none;
+	}
+	ul.menu{
+		display:block;
+	}
     nav ul.menu{    
 		float: left;
 	    width: 23.40426%;
