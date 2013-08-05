@@ -3,6 +3,7 @@
    ========================================================================== */
 //get partials
 @import "normalize";
+@import "variables";
 
 html,
 button,
@@ -51,35 +52,6 @@ textarea {
   color: #000;
   padding: 0.2em 0;
 }
-
-   /* ==============
-	Sass: Variables and Mixins
-      ============== */
-$sans-serif: "Belgrano", Georgia, serif;
-$sans: "Source Sans Pro", sans-serif;
-$black: #333333;
-$white: white;
-
-//Spirit palette
-$dark-green: #08392f;
-$green: #0c5a48;
-$light-green: #036957;
-$pale-green: #8ebcb3;
-$gold: #b6ac59;
-$light-gold: #dddebc;
-$gold: #efe988;
-$brick: #854f32;
-$blue: #28767d;
-
-//old palette
-//$base-brown:#3a3129;
-//$light-brown:#867a6f;
-//$dark-green:#0f4836;
-//$green:#05614d;
-//$light-green:#85a36a;
-//$light-blue:#28767d;
-//$blue:#008997;
-//$gold:#cbccbb;
 
 $pad: 0.5em;
 
