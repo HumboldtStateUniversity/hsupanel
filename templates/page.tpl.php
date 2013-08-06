@@ -55,6 +55,7 @@
 							<nav>
 							<?php print render($main_menu_expanded);?>
 							</nav>
+							<?php /* print render($page['submenu']); */ ?>
 						</div>	 
 					    <div class="main-content">
 		                    <header>
