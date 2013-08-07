@@ -1,1 +1,1 @@
-(function(e){jQuery(document).ready(function(){e("nav .menu").tinyNav({header:"Menu"})})})(jQuery);
+(function(e){jQuery(document).ready(function(){e("nav .menu").tinyNav({header:"Menu"});e("table").addClass("responsive")})})(jQuery);
