@@ -99,6 +99,14 @@ body {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+img, embed,object, video{
+	max-width:100%;
+	height: auto;
+}
+.ie7 img, .ie7 embed, .ie7 object, .ie7 video, .ie8 img, .ie8 embed, .ie8 object, .ie8 video{
+	width:auto;
+	height:auto;
+}
 /* ==============
     MOBILE: Menu
    ============== */
@@ -201,7 +209,7 @@ img.circleH {
   background: $light-gold;
 }
 
-.banner img, .main-content img {
+.banner img {
   width: 100%;
 }
 
@@ -467,7 +475,7 @@ ul.events {
     Table styles
    ==================== */
 table {
-  margin: $pad * 4 0 $pad * 2 0;
+  margin:0 0 $pad * 2 0;
   width: 100%;
 }
 
