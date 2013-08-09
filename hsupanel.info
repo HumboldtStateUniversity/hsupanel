@@ -8,6 +8,7 @@ stylesheets[all][] = css/main.css
 ; JS
 scripts[] = js/vendor/modernizr-2.6.2-respond-1.1.0.min.js
 scripts[] = js/vendor/responsive-tables-ck.js
+scripts[] = js/vendor/jquery.fitvids.js
 scripts[] = js/plugins.js
 scripts[] = js/main-ck.js
 
