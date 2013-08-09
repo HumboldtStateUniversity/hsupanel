@@ -111,6 +111,7 @@ img, embed,object, video{
     MOBILE: Menu
    ============== */
 /* default style */
+
 .tinynav {
   width: 100% !important;
   display: block;
@@ -145,11 +146,58 @@ ul.menu li.leaf, ul.menu li.expanded, ul.menu li.collapsed {
   padding: 0;
   margin: 0;
 }
-
-/*li.expanded, li.collapsed, li.leaf {
-	padding: 0;
-}*/
 /*end mobile menu*/
+
+/* Utility navigation module */
+ul.utility-nav {
+  margin: $pad*2 auto;
+  float: right;
+  position: relative;
+  list-style: none;
+  font-size: .9em;
+  width:100%;
+  padding-left:0;
+  
+  li {
+    float: left;
+  }
+  a {
+    color: $white;
+    margin: 0 $pad;
+    padding: $pad * 2 $pad;
+  }
+  a:hover {
+    text-decoration: none;
+    background: $light-green;
+  }
+  li:hover ul {
+    left: 0;
+  }
+  li:hover ul a {
+    padding: $pad;
+    margin: 0;
+    display: block;
+  }
+  li:hover ul a:hover {
+    text-decoration: none;
+    background: $dark-green;
+  }
+}
+.index {
+  ul {
+    position: absolute;
+    z-index: 8000;
+    background: $light-green;
+    width: 100%;
+    margin: 0;
+    left: -9999px;
+    padding: 0;
+    float: none;
+    top: 29px;
+    border-top: solid 1px lighten($light-gold, 13%);
+  }
+}
+//end utility nav
 .header-container {
   padding: $pad * 2 0;
 }
@@ -627,6 +675,10 @@ ul.primary li.active a {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
+	ul.utility-nav {
+		width:auto;
+		margin:0 auto;
+	}
   nav li:first-child a {
     margin-left: 0;
   }
@@ -681,9 +733,7 @@ ul.primary li.active a {
 }
 
 @media only screen and (min-width: 49.375em) {
-  /* ====================
-      WIDE: CSS3 Effects
-     ==================== */
+
   /* ============
       WIDE: Main
      ============ */
@@ -939,54 +989,5 @@ ul.primary li.active a {
   h2,
   h3 {
     page-break-after: avoid;
-  }
-}
-
-/* Utility navigation module */
-ul.utility-nav {
-  //	padding:$pad;
-  margin: 0;
-  float: right;
-  position: relative;
-  list-style: none;
-  font-size: .9em;
-  li {
-    float: left;
-  }
-  a {
-    color: $white;
-    margin: 0 $pad;
-    padding: $pad * 2 $pad;
-  }
-  a:hover {
-    text-decoration: none;
-    background: $light-green;
-  }
-  li:hover ul {
-    left: 0;
-  }
-  li:hover ul a {
-    padding: $pad;
-    margin: 0;
-    display: block;
-  }
-  li:hover ul a:hover {
-    text-decoration: none;
-    background: $dark-green;
-  }
-}
-
-.index {
-  ul {
-    position: absolute;
-    z-index: 8000;
-    background: $light-green;
-    width: 100%;
-    margin: 0;
-    left: -9999px;
-    padding: 0;
-    float: none;
-    top: 29px;
-    border-top: solid 1px lighten($light-gold, 13%);
   }
 }
