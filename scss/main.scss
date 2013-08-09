@@ -149,6 +149,9 @@ ul.menu li.leaf, ul.menu li.expanded, ul.menu li.collapsed {
 /*end mobile menu*/
 
 /* Utility navigation module */
+.touch ul.utility-nav  a:hover{
+  background:none;
+}
 ul.utility-nav {
   margin: $pad*2 auto;
   float: right;
@@ -170,20 +173,20 @@ ul.utility-nav {
     text-decoration: none;
     background: $light-green;
   }
-  li:hover ul {
+  .dropdown ul.showmenu {
     left: 0;
   }
-  li:hover ul a {
+  li ul a {
     padding: $pad;
     margin: 0;
     display: block;
   }
-  li:hover ul a:hover {
+  li ul a:hover {
     text-decoration: none;
     background: $dark-green;
   }
 }
-.index {
+.dropdown {
   ul {
     position: absolute;
     z-index: 8000;
