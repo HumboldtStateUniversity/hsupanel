@@ -4,6 +4,9 @@
 		$("nav .menu").tinyNav({
 			header: 'Menu'
 		});
+		$(".utility-nav li ul").removeClass('showmenu');
+		// Responsive videos with fitVids
+		$(".main-container").fitVids();
 		// Add responsive class to table. Makes responsibe tables possible.
 		$("table").addClass("responsive");
 	});
