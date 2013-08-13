@@ -99,14 +99,16 @@ body {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-img, embed,object, video{
-	max-width:100%;
-	height: auto;
+img, embed,object, video {
+  max-width: 100%;
+  height: auto;
 }
-.ie7 img, .ie7 embed, .ie7 object, .ie7 video, .ie8 img, .ie8 embed, .ie8 object, .ie8 video{
-	width:auto;
-	height:auto;
+
+.ie7 img, .ie7 embed, .ie7 object, .ie7 video, .ie8 img, .ie8 embed, .ie8 object, .ie8 video {
+  width: auto;
+  height: auto;
 }
+
 /* ==============
     MOBILE: Menu
    ============== */
@@ -146,21 +148,22 @@ ul.menu li.leaf, ul.menu li.expanded, ul.menu li.collapsed {
   padding: 0;
   margin: 0;
 }
+
 /*end mobile menu*/
 
 /* Utility navigation module */
-.touch ul.utility-nav  a:hover{
-  background:none;
+.touch ul.utility-nav  a:hover {
+  background: none;
 }
+
 ul.utility-nav {
-  margin: $pad*2 auto;
+  margin: $pad * 2 auto;
   float: right;
   position: relative;
   list-style: none;
   font-size: .9em;
-  width:100%;
-  padding-left:0;
-  
+  width: 100%;
+  padding-left: 0;
   li {
     float: left;
   }
@@ -186,6 +189,7 @@ ul.utility-nav {
     background: $dark-green;
   }
 }
+
 .dropdown {
   ul {
     position: absolute;
@@ -200,6 +204,7 @@ ul.utility-nav {
     border-top: solid 1px lighten($light-gold, 13%);
   }
 }
+
 //end utility nav
 .header-container {
   padding: $pad * 2 0;
@@ -526,7 +531,7 @@ ul.events {
     Table styles
    ==================== */
 table {
-  margin:0 0 $pad * 2 0;
+  margin: 0 0 $pad * 2 0;
   width: 100%;
 }
 
@@ -678,10 +683,10 @@ ul.primary li.active a {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-	ul.utility-nav {
-		width:auto;
-		margin:0 auto;
-	}
+  ul.utility-nav {
+    width: auto;
+    margin: 0 auto;
+  }
   nav li:first-child a {
     margin-left: 0;
   }
@@ -736,7 +741,6 @@ ul.primary li.active a {
 }
 
 @media only screen and (min-width: 49.375em) {
-
   /* ============
       WIDE: Main
      ============ */
@@ -748,7 +752,7 @@ ul.primary li.active a {
   }
   .side {
     float: left;
-	clear:left;
+    clear: left;
     width: 23.40426%;
     z-index: 0;
     position: relative;
