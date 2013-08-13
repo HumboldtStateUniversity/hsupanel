@@ -176,6 +176,7 @@ ul.utility-nav {
     text-decoration: none;
     background: $light-green;
   }
+
   .dropdown ul.showmenu {
     left: 0;
   }
@@ -204,7 +205,10 @@ ul.utility-nav {
     border-top: solid 1px lighten($light-gold, 13%);
   }
 }
-
+/* replace a-z dropdown with direct link to the index when js is disabled */
+html.no-js .dropdown a.drop, html.js .dropdown a.nodrop{
+	display:none;
+}
 //end utility nav
 .header-container {
   padding: $pad * 2 0;

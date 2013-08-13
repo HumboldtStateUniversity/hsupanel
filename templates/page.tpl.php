@@ -5,8 +5,10 @@
 			<div class="wrapper">
 				<div><a href="http://humboldt.edu"><img src="<?php print $base_path . $directory ?>/img/hsu-wm@2x.png" alt="Humboldt State University" class="reflow"></a>
 					<ul class="utility-nav">
-				    <li class="dropdown"><a href="#">A-Z index</a>
-				    <ul class="showmenu">
+				    <li class="dropdown">
+						<a href="#" class="drop">A-Z index</a>
+						<a href="http://humboldt.edu/siteindex/A/" class="nodrop">A-Z index</a>
+				    <ul>
 					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/A/">A</a></li>
 					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/B/">B</a></li>
 					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/C/">C</a></li>
