@@ -54,10 +54,25 @@
 		            <div class="wrapper clearfix">
 						<div class="skip"><a href="#main">skip navigation</a></div>
 		                <div class="nav-primary">
-							<nav>
-							<?php print render($main_menu_expanded);?>
-							</nav>
-							<?php /* print render($page['submenu']); */ ?>
+							<?php if ($main_menu): ?>
+								<nav>
+									<?php print theme('links__system_main_menu', array(
+									'links' => $main_menu,
+									'attributes' => array(
+										'class' => array('menu', 'clearfix'),
+									),
+									'heading' => array(
+										'text' => t('Main menu'),
+										'level' => 'h2',
+										'class' => array('element-invisible'),
+									),
+									)); ?>
+								</nav> <!-- /#main-menu -->
+							<?php else: ?>
+								<nav>
+									<?php print render($page['submenu']); ?>
+								</nav>
+							<?php endif; ?>
 						</div>	 
 					    <div class="main-content">
 		                    <header>
