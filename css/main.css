@@ -758,7 +758,7 @@ ul.utility-nav {
     background: #08392f; }
 
 /* line 195, ../scss/main.scss */
-.dropdown ul {
+.utility-nav .dropdown ul {
   position: absolute;
   z-index: 8000;
   background: #036957;
