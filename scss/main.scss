@@ -80,7 +80,7 @@ $grid-pad: 20px;
    ========================================================================== */
 
 body {
-  font: 14px / 22px $sans, Arial;
+  font: 16px / 22px $sans, Arial;
 }
 
 .wrapper {
@@ -750,6 +750,7 @@ ul.primary li.active a {
      ============ */
   body {
     background: $green;
+	font-size:14px;
   }
   .main-container {
     background: lighten($light-gold, 13%);
