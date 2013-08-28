@@ -1312,7 +1312,7 @@ ul.primary li.active a {
 
   /* line 755, ../scss/main.scss */
   .main-container {
-    background: #f4f4e8; }
+    background: #f4f4e8 url(../img/squairy_light.png); }
 
   /* line 758, ../scss/main.scss */
   .side {
@@ -1320,8 +1320,7 @@ ul.primary li.active a {
     clear: left;
     width: 23.40426%;
     z-index: 0;
-    position: relative;
-    background: #f4f4e8; }
+    position: relative; }
 
   /* line 766, ../scss/main.scss */
   .banner {

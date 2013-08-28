@@ -753,7 +753,7 @@ ul.primary li.active a {
 	font-size:14px;
   }
   .main-container {
-    background: lighten($light-gold, 13%);
+    background: lighten($light-gold, 13%) url(../img/squairy_light.png);
   }
   .side {
     float: left;
@@ -761,7 +761,7 @@ ul.primary li.active a {
     width: 23.40426%;
     z-index: 0;
     position: relative;
-    background: lighten($light-gold, 13%);
+//    background: lighten($light-gold, 13%);
   }
   .banner {
     margin: $pad * 2.5 $pad 0 0;
