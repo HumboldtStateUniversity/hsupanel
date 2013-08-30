@@ -32,3 +32,6 @@ features[] = name
 features[] = slogan
 features[] = main_menu
 features[] = secondary_menu
+
+; Set the default values of settings on the theme-settings.php form.
+settings[hsupanel_header_image] = header-sathergate-1.png
