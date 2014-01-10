@@ -97,7 +97,7 @@
 								</div>
 							<?php endif; ?>
 		                </div><!--#side-->
-		        </div> <!-- #main-container -->
+		        </div> </div><!-- #main-container -->
 	 <div class="footer-container">
             <footer class="wrapper">
 				<div class="grid">

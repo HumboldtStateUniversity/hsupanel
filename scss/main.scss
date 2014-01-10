@@ -88,6 +88,7 @@ body {
   margin: 0 5%;
 }
 
+
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -113,6 +114,10 @@ img, embed,object, video {
     MOBILE: Menu
    ============== */
 /* default style */
+.nav-primary {
+  width:100%;
+  float:none;
+}
 
 .tinynav {
   width: 100% !important;
@@ -210,12 +215,8 @@ html.no-js .dropdown a.drop, html.js .dropdown a.nodrop{
 	display:none;
 }
 //end utility nav
-.header-container {
-  padding: $pad * 2 0;
-}
-
 .masthead {
-  background-color: $dark-green;
+  background-color: $green;
   padding: $pad;
 }
 
@@ -280,8 +281,10 @@ img.circleH {
 
 .header-container {
   position: relative;
-  background: $green;
+  background: url('../img/gold-hgh.jpg') no-repeat center top;
   color: $white;
+  padding: $pad * 2 0;
+  height:15em;
 }
 
 ul {
@@ -687,6 +690,7 @@ ul.primary li.active a {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
+  
   ul.utility-nav {
     width: auto;
     margin: 0 auto;
@@ -716,7 +720,7 @@ ul.primary li.active a {
     border-bottom: solid 1px rgba($black, 0.1);
   }
   nav ul.menu a.active {
-    background-color: $white !important;
+//    background-color: $pale-green !important;
     color: $brick !important;
     z-index: 500;
     position: relative;
@@ -753,7 +757,16 @@ ul.primary li.active a {
 	font-size:14px;
   }
   .main-container {
-    background: lighten($light-gold, 13%) url(../img/squairy_light.png);
+//    background: lighten($light-gold, 13%) url(../img/squairy_light.png);
+	background:$white;
+	.wrapper{
+//		border:solid 1px red;
+	    -webkit-box-shadow: -1px 0px 10px 0px lighten($black, 40%);
+	    -moz-box-shadow: -1px 0px 10px 0px lighten($black, 40%);
+	    box-shadow: -1px 0px 10px 0px lighten($black, 40%);
+		margin-top:-$pad * 5;
+		background:$white;
+	}
   }
   .side {
     float: left;
@@ -761,7 +774,7 @@ ul.primary li.active a {
     width: 23.40426%;
     z-index: 0;
     position: relative;
-//    background: lighten($light-gold, 13%);
+	background:$white;
   }
   .banner {
     margin: $pad * 2.5 $pad 0 0;
@@ -815,15 +828,8 @@ ul.primary li.active a {
     left: auto;
     width: 76.59574%;
     border-left: auto;
-    background: $white url(../img/rt-bg.gif) repeat-y scroll top right;
-    margin-top: -$pad * 2;
     padding: 0 50px 20px 20px;
     min-height: 400px;
-    -webkit-box-shadow: -1px 0px 10px 0px lighten($black, 40%);
-    -moz-box-shadow: -1px 0px 10px 0px lighten($black, 40%);
-    box-shadow: -1px 0px 10px 0px lighten($black, 40%);
-    z-index: 300;
-    position: relative;
   }
   .ie7 .main-content {
     width: 69%;
@@ -835,6 +841,20 @@ ul.primary li.active a {
   /* ============
       WIDE: Menu
      ============ */
+  .nav-primary {
+  	padding: 0;
+  	float: left;
+  	background: white;
+  	width: 23.405%;
+  	margin: auto;
+	
+  	ul.menu {
+  		margin:0;
+  		padding:0;
+  		width:100%;
+		position:relative;
+  	}
+  }
   .tinynav {
     width: 100% !important;
     display: none;
@@ -848,9 +868,10 @@ ul.primary li.active a {
   }
   ul.menu li:first-child a {
     border-top: none;
+	background:$white;
   }
   ul.menu li:last-child a {
-    //		border-bottom:none;
+    //border-bottom:none;
  
   }
   ul.menu {
