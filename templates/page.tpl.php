@@ -44,37 +44,31 @@
 				</div>
 			</div><!--#wrapper-->
 		</div><!--#masthead-->
-		        <div class="header-container">
-		            <header class="wrapper clearfix">
+		        <header class="header-container clearfix">
+		            <div class="wrapper">
 					<p class="site_name"><a href="<?php print $front_page ?>"><?php print $site_name; ?></a><span class="slogan"><?php print $site_slogan;?></span></p>
-
-		            </header>
-		        </div><!-- #header-container -->	
+		            </div>
+					<div class="nav-horizontal">
+						<nav class="wrapper">
+							<?php print render($page['horizontal_nav']); ?>
+						</nav>
+					</div>
+	               
+		        </header><!-- #header-container -->	
 		        <div class="main-container">
+
 		            <div class="wrapper clearfix">
 						<div class="skip"><a href="#main">skip navigation</a></div>
-		                <div class="nav-primary">
+		                <section class="nav-primary">
 							<?php if ($main_menu): ?>
-								<nav>
-									<?php print theme('links__system_main_menu', array(
-									'links' => $main_menu,
-									'attributes' => array(
-										'class' => array('menu', 'clearfix'),
-									),
-									'heading' => array(
-										'text' => t('Main menu'),
-										'level' => 'h2',
-										'class' => array('element-invisible'),
-									),
-									)); ?>
-								</nav> <!-- /#main-menu -->
+								<?php print render($main_menu_expanded);?> <!-- /#main-menu -->
 							<?php else: ?>
 								<nav>
 									<?php print render($page['submenu']); ?>
 								</nav>
 							<?php endif; ?>
-						</div>	 
-					    <div class="main-content">
+						</section>	 
+					    <section class="main-content" id="main">
 		                    <header>
 								<div class="banner">
 									<?php print render($page['banner_image']); ?>
@@ -89,16 +83,17 @@
 		
 								<?php print render($page['content']); ?>
 		                        
-			            </div> <!-- #main-content -->
-		                <div class="side">
+			            </section> <!-- #main-content -->
+		                <section class="side">
 							<?php if ($page['sidebar_first']): ?>
 								<div class="side-panel">
 									<?php print render($page['sidebar_first']); ?>
 								</div>
 							<?php endif; ?>
-		                </div><!--#side-->
+		                </section><!--#side-->
 		        </div> </div><!-- #main-container -->
 	 <div class="footer-container">
+			 <div class="circleh"></div>
             <footer class="wrapper">
 				<div class="grid">
 					<article class="col-1-3 module">

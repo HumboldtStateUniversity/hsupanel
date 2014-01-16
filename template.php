@@ -3,8 +3,8 @@
 	# loading web fonts and external css
 
 	function hsupanel_preprocess_html(&$variables) {
-		drupal_add_css('https://fonts.googleapis.com/css?family=Source+Sans+Pro', array('type' => 'external'));
-		drupal_add_css('https://fonts.googleapis.com/css?family=Belgrano', array('type' => 'external'));
+		drupal_add_css('https://fonts.googleapis.com/css?family=Open+Sans', array('type' => 'external'));
+		drupal_add_css('https://fonts.googleapis.com/css?family=Droid+Serif', array('type' => 'external'));
 	}
 	
 	# menu tree style navigation

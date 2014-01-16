@@ -14,8 +14,9 @@ scripts[] = js/main-ck.js
 
 ; Regions
 regions[banner_image] = Banner Image
-regions[sidebar_first] = Left sidebar
+regions[horizontal_nav] = Horizontal Navigation
 regions[submenu] = Section Navigation
+regions[sidebar_first] = Left sidebar
 regions[footer_firstcolumn] = Footer - Column 1
 regions[footer_secondcolumn] = Footer - Column 2
 regions[footer_thirdcolumn] = Footer - Column 3
