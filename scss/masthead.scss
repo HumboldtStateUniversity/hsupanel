@@ -1,0 +1,72 @@
+/* Utility navigation module */
+
+.touch ul.utility-nav  a:hover {
+  background: none;
+}
+
+ul.utility-nav {
+  margin: $pad * 2 auto;
+  float: right;
+  position: relative;
+  list-style: none;
+  font-size: .9em;
+  width: 100%;
+  padding-left: 0;
+  li {
+    float: left;
+  }
+  a {
+    color: $white;
+    margin: 0 $pad;
+    padding: $pad * 2 $pad;
+  }
+  a:hover {
+    text-decoration: none;
+    background: $light-green;
+  }
+
+  .dropdown ul.showmenu {
+    left: 0;
+  }
+  li ul a {
+    padding: $pad;
+    margin: 0;
+    display: block;
+  }
+  li ul a:hover {
+    text-decoration: none;
+    background: $dark-green;
+  }
+}
+
+.utility-nav .dropdown {
+  ul {
+    position: absolute;
+    z-index: 8000;
+    background: $light-green;
+    width: 100%;
+    margin: 0;
+    left: -9999px;
+    padding: 0;
+    float: none;
+    top: 29px;
+    border-top: solid 1px lighten($light-gold, 13%);
+  }
+}
+/* replace a-z dropdown with direct link to the index when js is disabled */
+html.no-js .dropdown a.drop, html.js .dropdown a.nodrop{
+	display:none;
+}
+//end utility nav
+.masthead {
+  background-color: $green;
+  padding: $pad;
+}
+
+.masthead p {
+  margin: 0;
+}
+
+.masthead img {
+  width: 100%;
+}

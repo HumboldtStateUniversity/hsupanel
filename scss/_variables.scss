@@ -1,28 +1,26 @@
 /* ==============
 	Variables imported into main.scss
 ============== */
-$sans-serif: "Belgrano", Georgia, serif;
-$sans: "Source Sans Pro", sans-serif;
+$serif: 'Droid Serif', Georgia, serif;
+$sans: 'Open Sans', sans-serif;
 $black: #333333;
 $white: white;
 
-//Spirit palette
-$dark-green: #08392f;
-$green: #0c5a48;
-$light-green: #036957;
-$pale-green: #8ebcb3;
+//Colors
+
+$dark-green: #0c4301;
+$green: #25551b;
+$light-green: #5c8021;
+$pale-green: #baccaf;
 $gold: #b6ac59;
 $light-gold: #dddebc;
 $gold: #efe988;
-$brick: #854f32;
+$brick: #933621;
+$dark-brick:#5e2417;
+$orange:#b65300;
+$dark-orange:#984907;
 $blue: #28767d;
 
-//old palette
-//$base-brown:#3a3129;
-//$light-brown:#867a6f;
-//$dark-green:#0f4836;
-//$green:#05614d;
-//$light-green:#85a36a;
-//$light-blue:#28767d;
-//$blue:#008997;
-//$gold:#cbccbb;
+//Layout
+$pad: 0.5em;
+$grid-pad: 20px;

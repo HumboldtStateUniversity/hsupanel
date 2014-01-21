@@ -4,62 +4,35 @@
 		<div class="masthead clearfix">
 			<div class="wrapper">
 				<div><a href="http://humboldt.edu"><img src="<?php print $base_path . $directory ?>/img/hsu-wm@2x.png" alt="Humboldt State University" class="reflow"></a>
-					<ul class="utility-nav">
-				    <li class="dropdown">
-						<a href="#" class="drop">A-Z index</a>
-						<a href="http://humboldt.edu/siteindex/A/" class="nodrop">A-Z index</a>
-				    <ul>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/A/">A</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/B/">B</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/C/">C</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/D/">D</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/E/">E</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/F/">F</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/G/">G</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/H/">H</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/I/">I</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/J/">J</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/K/">K</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/L/">L</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/M/">M</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/N/">N</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/O/">O</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/P/">P</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/Q/">Q</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/R/">R</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/S/">S</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/T/">T</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/U/">U</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/V/">V</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/W/">W</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/X/">X</a></li>
-					      <li><a href="http://www.humboldt.edu/humboldt/siteindex/Y/">Y</a></li>
-					      <li ><a href="http://www.humboldt.edu/humboldt/siteindex/Z/">Z</a></li>
-					  </ul>
-				    </li>
-				    <li><a href="#">Quicklinks</a></li>
-				    <li><a href="http://humboldt.edu/myhumboldt">myHumboldt</a></li>
-				</ul>
+					
 				  </div> 
 				</div>
 			</div><!--#wrapper-->
 		</div><!--#masthead-->
-		        <div class="header-container">
-		            <header class="wrapper clearfix">
+		        <header class="header-container clearfix">
+		            <div class="wrapper">
 					<p class="site_name"><a href="<?php print $front_page ?>"><?php print $site_name; ?></a><span class="slogan"><?php print $site_slogan;?></span></p>
-
-		            </header>
-		        </div><!-- #header-container -->	
+		            </div>
+					<div class="nav-horizontal">
+						<nav class="wrapper">
+							<?php print render($page['horizontal_nav']); ?>
+						</nav>
+					</div>
+		        </header><!-- #header-container -->	
 		        <div class="main-container">
+
 		            <div class="wrapper clearfix">
 						<div class="skip"><a href="#main">skip navigation</a></div>
-		                <div class="nav-primary">
-							<nav>
-							<?php print render($main_menu_expanded);?>
-							</nav>
-							<?php /* print render($page['submenu']); */ ?>
-						</div>	 
-					    <div class="main-content">
+		                <section class="nav-primary">
+							<?php if ($main_menu): ?>
+								<?php print render($main_menu_expanded);?> <!-- /#main-menu -->
+							<?php else: ?>
+								<nav>
+									<?php print render($page['submenu']); ?>
+								</nav>
+							<?php endif; ?>
+						</section>	 
+					    <section class="main-content" id="main">
 		                    <header>
 								<div class="banner">
 									<?php print render($page['banner_image']); ?>
@@ -74,16 +47,17 @@
 		
 								<?php print render($page['content']); ?>
 		                        
-			            </div> <!-- #main-content -->
-		                <div class="side">
+			            </section> <!-- #main-content -->
+		                <section class="side">
 							<?php if ($page['sidebar_first']): ?>
 								<div class="side-panel">
 									<?php print render($page['sidebar_first']); ?>
 								</div>
 							<?php endif; ?>
-		                </div><!--#side-->
-		        </div> <!-- #main-container -->
+		                </section><!--#side-->
+		        </div> </div><!-- #main-container -->
 	 <div class="footer-container">
+			 <div class="circleh"></div>
             <footer class="wrapper">
 				<div class="grid">
 					<article class="col-1-3 module">
