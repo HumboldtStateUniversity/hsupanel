@@ -5,6 +5,7 @@
 @import "normalize";
 @import "variables";
 @import "responsive-tables";
+@import "masthead";
 
 html,
 button,
@@ -54,15 +55,11 @@ textarea {
   padding: 0.2em 0;
 }
 
-$pad: 0.5em;
-
 *,:after,:before {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-
-$grid-pad: 20px;
 
 .grid {
   /*     background: white;*/
@@ -121,8 +118,8 @@ img, embed,object, video {
 
 .tinynav {
   width: 100% !important;
-  display: block;
-  margin-top: $pad * 2;
+//  display: block;
+  margin: $pad * 2 auto;
 }
 
 ul.menu {
@@ -134,7 +131,7 @@ ul.menu ul.menu {
 }
 
 nav ul.menu ul.menu a:link, nav ul.menu ul.menu a:visited {
-  color: $black;
+//  color: $black;
   text-indent: 1em;
   font-size: .9em;
 }
@@ -156,82 +153,10 @@ ul.menu li.leaf, ul.menu li.expanded, ul.menu li.collapsed {
 .nav-horizontal{
 	background: rgba($dark-green, .8);
 	width:100%;
-	padding:$pad*2 0;
+//	padding:$pad*2 0;
 	clear:left;
 }
 /*end mobile menu*/
-
-/* Utility navigation module */
-.touch ul.utility-nav  a:hover {
-  background: none;
-}
-
-ul.utility-nav {
-  margin: $pad * 2 auto;
-  float: right;
-  position: relative;
-  list-style: none;
-  font-size: .9em;
-  width: 100%;
-  padding-left: 0;
-  li {
-    float: left;
-  }
-  a {
-    color: $white;
-    margin: 0 $pad;
-    padding: $pad * 2 $pad;
-  }
-  a:hover {
-    text-decoration: none;
-    background: $light-green;
-  }
-
-  .dropdown ul.showmenu {
-    left: 0;
-  }
-  li ul a {
-    padding: $pad;
-    margin: 0;
-    display: block;
-  }
-  li ul a:hover {
-    text-decoration: none;
-    background: $dark-green;
-  }
-}
-
-.utility-nav .dropdown {
-  ul {
-    position: absolute;
-    z-index: 8000;
-    background: $light-green;
-    width: 100%;
-    margin: 0;
-    left: -9999px;
-    padding: 0;
-    float: none;
-    top: 29px;
-    border-top: solid 1px lighten($light-gold, 13%);
-  }
-}
-/* replace a-z dropdown with direct link to the index when js is disabled */
-html.no-js .dropdown a.drop, html.js .dropdown a.nodrop{
-	display:none;
-}
-//end utility nav
-.masthead {
-  background-color: $green;
-  padding: $pad;
-}
-
-.masthead p {
-  margin: 0;
-}
-
-.masthead img {
-  width: 100%;
-}
 
 .side-panel > div > div {
   //	background: $light-gold;
@@ -396,8 +321,8 @@ h6 {
 
 /*main content*/
 .main-content {
-  h2, h3, h4, h5, h6 {
-    color: $brick;
+  h1, h2, h3, h4, h5, h6 {
+    color: $green;
   }
   ul {
     list-style: disc;
@@ -433,12 +358,8 @@ ul.links {
 }
 
 .title {
-  //	font-size:2.5em;
-  font-weight: 600;
-  color: $brick;
   width: 80%;
   line-height: 1em;
-  /*	float:left;*/
   margin-bottom: 0;
 }
 
@@ -503,6 +424,7 @@ ul.links {
 
 .site_name a:link, .site_name a:visited {
   color: $dark-green;
+  text-decoration:none;
 }
 
 .slogan {
@@ -572,18 +494,29 @@ tr.even, tr.odd {
     Link styles
    ==================== */
 a:link, a:visited {
-  color: $green;
-  text-decoration: none;
+  color: $orange;
+//  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .side-panel a {
-  color: $black;
+  color: $green;
+  text-decoration:none;
+  &:hover {
+	  text-decoration:underline;
+	  color:$dark-orange;
+  }
 }
-
+h2 a:link, h2 a:visited {
+	text-decoration:none;
+	color:$green;
+	&:after {
+		content:" \00BB";
+	}
+}
 .footer-container a:link, .footer-container a:visited {
   color: $gold;
 }
@@ -670,13 +603,13 @@ ul.primary li.active a {
 .item-list .pager a {
   color: $white;
   padding: $pad - 0.25 $pad;
-  background-color: $light-green;
+  background-color: $green;
   margin: 0;
   text-decoration: none;
 }
 
 .item-list .pager a:hover {
-  background: $green;
+  background: $dark-green;
 }
 
 .main-content .item-list .pager .pager-current {
@@ -717,6 +650,7 @@ ul.primary li.active a {
   }
   nav ul.menu a:link, nav ul.menu a:visited {
     display: block;
+	color:$green;
     margin: 0;
     padding: $pad;
     text-decoration: none;
@@ -731,14 +665,13 @@ ul.primary li.active a {
   }
   nav ul.menu a.active {
 //    background-color: $pale-green !important;
-    color: $brick !important;
+    color: $dark-orange !important;
 //    z-index: 500;
     position: relative;
     border-bottom: solid 1px rgba($black, 0.1);
   }
   nav ul.menu a:hover {
-//    background-color: $white;
-    color: $white;
+    color: $dark-orange;
   }
   /* ========================
       INTERMEDIATE: Main
@@ -770,7 +703,7 @@ ul.primary li.active a {
 	  padding:$pad*5.5 $pad;
   }
   .main-container {
-    background: $white url(../img/panel-bg.gif) repeat-y left top;
+    background: #f1f1e2;
   }
   .side {
     float: left;
@@ -861,7 +794,7 @@ ul.primary li.active a {
   	width: 23.405%;
   	margin: auto;
 	
-  	ul.menu {
+  ul.menu {
   		margin:0;
   		padding:0;
   		width:100%;
@@ -898,14 +831,17 @@ ul.primary li.active a {
     display: inline;
     margin: 0;
   }
-}
+
 //horizontal navigation
 .nav-horizontal {
+	padding: 0;
 	nav ul.menu {
 		margin:0;
+		padding:$pad*2 0;		
 		li{
 			float:left;
 			position: relative;
+			margin:0 $pad/2;
 			&:hover ul{
 				display:block;
 			}
@@ -914,8 +850,9 @@ ul.primary li.active a {
 			color:$white;
 			border:none;
 		}
-		a.active {
+		a.active, a:hover {
 			background:$white;
+			color:$dark-orange;
 		}
 		ul{
 			display:none;
@@ -928,11 +865,13 @@ ul.primary li.active a {
 			li {
 				float:none;
 			}
-
+		}
+		ul.menu a:link , ul.menu a:visited {
+			color:$green;
 		}
 	}
 }
-
+}
 @media only screen and (min-width: 1140px) {
   /* ===============
       Maximal Width
