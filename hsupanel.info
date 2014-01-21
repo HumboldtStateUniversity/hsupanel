@@ -1,5 +1,5 @@
 name = hsupanel
-description = HSU general use Drupal theme
+description = This is a versatile, responsive theme for Humboldt State University Websites
 core = 7.x
 
 ; CSS
