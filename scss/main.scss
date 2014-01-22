@@ -6,6 +6,7 @@
 @import "variables";
 @import "responsive-tables";
 @import "masthead";
+@import "views";
 
 html,
 button,
@@ -336,11 +337,6 @@ ul.links {
   padding-left: 0;
   list-style: none;
 }
-
-.item-list ul {
-  //	padding-left:40px;
-}
-
 .item-list ul li {
   margin: 0;
 }
