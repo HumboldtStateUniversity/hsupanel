@@ -20,6 +20,7 @@ regions[sidebar_first] = Left sidebar
 regions[footer_firstcolumn] = Footer - Column 1
 regions[footer_secondcolumn] = Footer - Column 2
 regions[footer_thirdcolumn] = Footer - Column 3
+regions[footer_fourthcolumn] = Footer - Column 4
 regions[footer_social] = Footer - Social Media
 regions[help] = Help
 

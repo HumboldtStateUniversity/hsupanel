@@ -337,6 +337,11 @@ ul.links {
   padding-left: 0;
   list-style: none;
 }
+
+.item-list ul {
+  	padding-left:40px;
+}
+
 .item-list ul li {
   margin: 0;
 }
@@ -741,6 +746,9 @@ ul.primary li.active a {
   }
   .module {
     padding: $grid-pad;
+  }
+  footer .block > :first-child {
+		  margin-top:0 !important;
   }
   /* Opt-in outside padding */
   .grid-pad {

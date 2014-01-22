@@ -60,16 +60,20 @@
 			 <div class="circleh"></div>
             <footer class="wrapper">
 				<div class="grid">
-					<article class="col-1-3 module">
+					<article class="col-1-4 module">
 						<?php print render($page['footer_firstcolumn']); ?>
 					</article>
-					<article class="col-1-3 module">
+					<article class="col-1-4 module">
 						<?php print render($page['footer_secondcolumn']); ?>
 					</article>
-					<article class="col-1-3 module">
-							<?php print render($page['footer_thirdcolumn']); ?>
+					<article class="col-1-4 module">
+						<?php print render($page['footer_thirdcolumn']); ?>
+					</article>
+					<article class="col-1-4 module">
+							<?php print render($page['footer_fourthcolumn']); ?>
 							<?php print render($page['footer_social']); ?>
 					</article>
+					
 				</div>
             </footer>
         </div><!--#footer-container-->
