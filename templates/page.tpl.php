@@ -17,21 +17,21 @@
 						<?php endif; ?>	
 						</p>
 		            </div>
-					<div class="nav-horizontal">
-						<nav class="wrapper">
-							<?php print render($page['horizontal_nav']); ?>
-						</nav>
-					</div>
+					<?php if ($page['horizontal_nav']): ?>
+						<div class="nav-horizontal">
+							<nav class="wrapper">
+								<?php print render($page['horizontal_nav']); ?>
+							</nav>
+						</div>
+					<?php endif;?>
 		        </header><!-- #header-container -->	
 		        <div class="main-container">
 
 		            <div class="wrapper clearfix">
 						<div class="skip"><a href="#main">skip navigation</a></div>
 		                <section class="nav-primary">
-							<?php if ($main_menu): ?>
-								<?php print render($main_menu_expanded);?> <!-- /#main-menu -->
-							<?php else: ?>
-								<nav>
+							<?php if ($page['submenu']): ?>
+									<nav>
 									<?php print render($page['submenu']); ?>
 								</nav>
 							<?php endif; ?>
