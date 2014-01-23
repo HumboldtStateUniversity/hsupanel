@@ -11,7 +11,11 @@
 		</div><!--#masthead-->
 		        <header class="header-container clearfix">
 		            <div class="wrapper">
-					<p class="site_name"><a href="<?php print $front_page ?>"><?php print $site_name; ?></a><span class="slogan"><?php print $site_slogan;?></span></p>
+					<p class="site_name"><a href="<?php print $front_page ?>"><?php print $site_name; ?></a>
+						<?php if ($site_slogan): ?>
+							<span class="slogan"><?php print $site_slogan;?></span>
+						<?php endif; ?>	
+						</p>
 		            </div>
 					<div class="nav-horizontal">
 						<nav class="wrapper">
@@ -33,7 +37,6 @@
 							<?php endif; ?>
 						</section>	 
 					    <section class="main-content" id="main">
-		                    <header>
 								<div class="banner">
 									<?php print render($page['banner_image']); ?>
 								</div>
@@ -56,7 +59,7 @@
 							<?php endif; ?>
 		                </section><!--#side-->
 		        </div> </div><!-- #main-container -->
-	 <div class="footer-container">
+	 <section class="footer-container">
 			 <div class="circleh"></div>
             <footer class="wrapper">
 				<div class="grid">
@@ -76,4 +79,4 @@
 					
 				</div>
             </footer>
-        </div><!--#footer-container-->
+        </section><!--#footer-container-->

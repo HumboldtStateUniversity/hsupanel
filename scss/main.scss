@@ -414,15 +414,13 @@ ul.links {
 
 .site_name {
 	font-family:$serif;
-  font-size: 2.3em;
+  font-size: 2em;
   margin: $pad*4 0;
   font-weight: 400;
   line-height: 1.1;
   background: rgba($white, .68);
   padding:$pad;
-  float:left;
 }
-
 .site_name a:link, .site_name a:visited {
   color: $dark-green;
   text-decoration:none;
@@ -436,7 +434,7 @@ ul.links {
   font-size: .4em;
   font-style: italic;
   padding: 0;
-  margin: 0 0 $pad * 2 0;
+  margin: $pad 0 0 0;
   color:$dark-green;
 }
 
@@ -705,6 +703,9 @@ ul.primary li.active a {
   }
   .main-container {
     background: #f1f1e2;
+  }
+  .site_name {
+	  width:60%;	
   }
   .side {
     float: left;
