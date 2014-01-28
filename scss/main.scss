@@ -4,6 +4,7 @@
 //get partials
 @import "normalize";
 @import "variables";
+@import "custom";
 @import "responsive-tables";
 @import "masthead";
 @import "views";
@@ -192,8 +193,11 @@ img.circleH {
   float: left;
   margin-right: $pad * 2;
   border: none;
+  position: relative;
 }
-
+.main-content img {
+  border: solid 3px lighten($gray, 30%);
+}
 .banner {
   width: auto;
   margin: $pad * 2.5 0 0 0;
@@ -681,6 +685,10 @@ ul.primary li.active a {
   }
   .masthead img {
     width: 348px;
+  }
+  .content-img {
+	  float:left;
+	  margin:auto 20px 10px auto;
   }
   /* ========================
       INTERMEDIATE: IE Fixes
