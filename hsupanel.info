@@ -4,6 +4,9 @@ core = 7.x
 
 ; CSS
 stylesheets[all][] = css/main.css
+;stylesheets[all][] = css/custom.css
+;stylesheets[all][] = css/local.css
+
 
 ; JS
 scripts[] = js/vendor/modernizr-2.6.2-respond-1.1.0.min.js
