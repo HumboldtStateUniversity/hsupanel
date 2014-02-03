@@ -18,7 +18,9 @@ function hsupanel_form_system_theme_settings_alter(&$form, &$form_state, $form_i
     return;
   }
 
-
+  // Collapse Toggle Display
+  $form['theme_settings']['#collapsible'] = TRUE;
+  $form['theme_settings']['#collapsed'] = TRUE;
 
   // Create the form using Forms API: http://api.drupal.org/api/7
   $form['hsupanel_image'] = array(
@@ -28,7 +30,7 @@ function hsupanel_form_system_theme_settings_alter(&$form, &$form_state, $form_i
     '#collapsed' => FALSE,
   );
 
-  // Manually set hsupanel header images - see below for alternate option
+  // Manually set hsupanel header images
   $header_options = array(
     t('hsupanel Headers')  => array(
       'gold-hgh.jpg'         => t('Harry Griffith Hall & Autumn Leaves'),
@@ -114,27 +116,5 @@ function hsupanel_image_preview($image_file) {
   );
 
   return $image_preview;
-}
-
-/**
- * Get a list of all available images in 'header-images' directory - adapted from http://drupal.org/project/noggin
- */
-function hsupanel_get_available_images() {
-  // Search for png and jpg files by default
-  $allowed_extensions = array('jpg', 'png');
-  // Path to theme
-  $theme_path = drupal_get_path('theme', 'hsupanel');
-  // Build the available images array
-  $images = array();
-  foreach ($allowed_extensions as $extension) {
-    $files = drupal_system_listing("/\.$extension$/", "$theme_path/header-images", 'name', 0);
-    foreach ($files as $name => $image) {
-      $images["$image->filename"] = $image->filename;
-    }
-  }
-  if (count($images)) {
-    $options['Available Images'] = $images;
-  }
-  return $options;
 }
 
