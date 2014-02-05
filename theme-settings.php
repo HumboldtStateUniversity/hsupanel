@@ -18,6 +18,14 @@ function hsupanel_form_system_theme_settings_alter(&$form, &$form_state, $form_i
     return;
   }
 
+
+  // turn off access for logo & favicon
+  $form['theme_settings']['toggle_logo']['#access'] = FALSE;
+  $form['theme_settings']['toggle_favicon']['#access'] = FALSE;
+  $form['logo']['#access'] = FALSE;
+  $form['favicon']['#access'] = FALSE;
+
+
   // Collapse Toggle Display
   $form['theme_settings']['#collapsible'] = TRUE;
   $form['theme_settings']['#collapsed'] = TRUE;
