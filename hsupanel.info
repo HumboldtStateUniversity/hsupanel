@@ -38,5 +38,11 @@ features[] = slogan
 features[] = main_menu
 features[] = secondary_menu
 
+; add logo and favicon to prevent logo/favicon errors when updating theme settings
+; access to logo & favicon is turned off in theme-settings.php
+features[] = logo
+features[] = favicon
+
 ; Set the default values of settings on the theme-settings.php form.
-settings[hsupanel_header_image] = header-sathergate-1.png
+settings[hsupanel_header_image] = gold-hgh.jpg
+settings[include_social_media] = 0
