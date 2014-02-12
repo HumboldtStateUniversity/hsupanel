@@ -126,3 +126,86 @@ function hsupanel_image_preview($image_file) {
   return $image_preview;
 }
 
+
+/**
+ * Social Media Options
+ */
+
+$form['social_media'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Social Media Links'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+    '#weight' => 15,
+    '#description'   => t('If you would like to include links to your social media pages,
+                           check the following box and then enter the appropriate information
+                           in the optional fields below.'),
+);
+
+//Social media toggle
+$form['social_media']['include_social_media'] = array(
+  '#type'          => 'checkbox',
+  '#title'         => t('Include Social Media Links'),
+  '#default_value' => theme_get_setting('include_social_media'),
+);
+
+//Social media links
+$form['social_media']['facebook_link'] = array(
+  '#type' => 'textfield',
+  '#title' => 'Facebook',
+  '#default_value' => theme_get_setting('facebook_link'),
+  '#description'   => t('Enter your Facebook username.'),
+  '#states'        => array(
+    'visible'      => array(
+      ':input[name="include_social_media"]' => array('checked' => TRUE),
+    ),
+  ),
+);
+
+$form['social_media']['twitter_link'] = array(
+  '#type' => 'textfield',
+  '#title' => 'Twitter',
+  '#default_value' => theme_get_setting('twitter_link'),
+  '#description'   => t('Enter your Twitter username.'),
+  '#states'        => array(
+    'visible'      => array(
+      ':input[name="include_social_media"]' => array('checked' => TRUE),
+    ),
+  ),
+);
+
+$form['social_media']['instagram_link'] = array(
+  '#type' => 'textfield',
+  '#title' => 'Instagram',
+  '#default_value' => theme_get_setting('instagram_link'),
+  '#description'   => t('Enter your Instagram username.'),
+  '#states'        => array(
+    'visible'      => array(
+      ':input[name="include_social_media"]' => array('checked' => TRUE),
+    ),
+  ),
+);
+
+$form['social_media']['youtube_link'] = array(
+  '#type' => 'textfield',
+  '#title' => 'YouTube',
+  '#default_value' => theme_get_setting('youtube_link'),
+  '#description'   => t('Enter your YouTube Username.'),
+  '#states'        => array(
+    'visible'      => array(
+      ':input[name="include_social_media"]' => array('checked' => TRUE),
+    ),
+  ),
+);
+
+$form['social_media']['flickr_link'] = array(
+  '#type' => 'textfield',
+  '#title' => 'Flickr',
+  '#default_value' => theme_get_setting('flickr_link'),
+  '#description'   => t('Enter your Flickr Username.'),
+  '#states'        => array(
+    'visible'      => array(
+      ':input[name="include_social_media"]' => array('checked' => TRUE),
+    ),
+  ),
+);

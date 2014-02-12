@@ -1,0 +1,20 @@
+.social-links{
+  li{
+    display:block;
+    float:left;
+  }
+  a{
+    display:block;
+    width:0;
+    height:0;
+    padding:30px 0 0 30px;
+    background:url(../img/social.png) no-repeat 0 0;
+    overflow:hidden;
+    margin-right:5px;
+
+    &.twitter-link{background-position:0 -30px;}
+    &.youtube-link{background-position:0 -59px;}
+    &.instagram-link{background-position:0 -89px;}
+    &.flickr-link{background-position:0 -119px;}
+  }
+}

@@ -75,6 +75,14 @@
 					<article class="col-1-4 module">
 							<?php print render($page['footer_fourthcolumn']); ?>
 							<?php print render($page['footer_social']); ?>
+
+
+							<?php if ($include_social && $social_links): ?>
+								<h2 class="element-invisible"><?php print t('Follow Us'); ?></h2>
+			          <div class="social-links clearfix">
+			              <?php print $social_links; ?>
+			          </div>
+		        	<?php endif; ?>
 					</article>
 					
 				</div>
