@@ -119,13 +119,13 @@ img, embed,object, video {
   float:none;
 }
 
-.tinynav {
+.nav-horizontal .tinynav, .nav-primary .tinynav {
   width: 100% !important;
 //  display: block;
   margin: $pad * 2 auto;
 }
 
-ul.menu {
+.nav-horizontal ul.menu, .nav-primary ul.menu {
   display: none;
 }
 
@@ -817,11 +817,11 @@ ul.primary li.active a {
 		position:relative;
   	}
   }
-  .tinynav {
+  .nav-horizontal .tinynav, .nav-primary .tinynav {
     width: 100% !important;
     display: none;
   }
-  ul.menu {
+  .nav-horizontal ul.menu, .nav-primary ul.menu {
     display: block;
   }
   s
