@@ -232,7 +232,7 @@ div.status {
 }
 
 /* Form elements*/
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"] {
   width: 70%;
 }
 
@@ -728,7 +728,7 @@ ul.primary li.active a {
   .banner {
     margin: $pad * 2.5 $pad 0 0;
   }
-  input[type="text"], input[type="password"] {
+  input[type="text"], input[type="password"], input[type="email"] {
     width: 66%;
   }
   input:-webkit-autofil {
@@ -874,7 +874,7 @@ ul.primary li.active a {
 			display:none;
 			z-index: 9999;
 			position:absolute;
-			top:37px;
+			top:36px;
 			background:$white;
 			left: 0px;
 			min-width:200px;
@@ -884,6 +884,8 @@ ul.primary li.active a {
 		}
 		ul.menu a:link , ul.menu a:visited {
 			color:$green;
+      text-indent:-9px;
+      padding-left:20px;
 		}
 	}
 }
