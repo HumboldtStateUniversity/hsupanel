@@ -154,6 +154,7 @@ ul.menu li.leaf, ul.menu li.expanded, ul.menu li.collapsed {
   margin: 0;
 }
 .nav-horizontal{
+  background: $dark-green;
 	background: rgba($dark-green, .8);
 	width:100%;
 //	padding:$pad*2 0;
@@ -424,6 +425,7 @@ ul.links {
   margin: $pad*4 0;
   font-weight: 400;
   line-height: 1.1;
+  background: $white;
   background: rgba($white, .68);
   padding:$pad;
 }
