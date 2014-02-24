@@ -860,6 +860,12 @@ ul.primary li.active a {
 			float:left;
 			position: relative;
 			margin:0 $pad/2;
+			&:hover {
+				background:$white;
+				a {
+					color:$brick;
+				}
+			}
 			&:hover ul{
 				display:block;
 			}
@@ -880,6 +886,7 @@ ul.primary li.active a {
 			background:$white;
 			left: 0px;
 			min-width:200px;
+			padding:$pad/2 0;
 			li {
 				float:none;
 			}
@@ -888,6 +895,9 @@ ul.primary li.active a {
 			color:$green;
       text-indent:-9px;
       padding-left:20px;
+	  &:hover{
+		  color:$brick;
+	  }
 		}
 	}
 }
