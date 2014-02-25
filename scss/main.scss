@@ -537,8 +537,8 @@ h2 a:link, h2 a:visited {
   }
 }
 //Remove negative text indent from contextual menu
-div.contextual-links-wrapper a{
-	text-indent:inherit;
+ul.contextual-links a{
+	text-indent:0;
 }
 
 .block-menu ul {
