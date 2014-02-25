@@ -536,6 +536,10 @@ h2 a:link, h2 a:visited {
     content: '» ';
   }
 }
+//Remove negative text indent from contextual menu
+div.contextual-links-wrapper a{
+	text-indent:inherit;
+}
 
 .block-menu ul {
   list-style: disc inside none;
