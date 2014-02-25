@@ -879,7 +879,7 @@ ul.primary li.active a {
 			color:$white;
 			border:none;
 		}
-		a.active, a:hover {
+		a.active, a:hover, li.active-trail a {
 			background:$white;
 			color:$dark-orange;
 		}
