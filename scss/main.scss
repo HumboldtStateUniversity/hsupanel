@@ -531,6 +531,7 @@ h2 a:link, h2 a:visited {
 .block-menu a {
   display: block;
   padding-top: $pad;
+  text-indent: -9px;
   &:before {
     content: '» ';
   }
@@ -893,7 +894,7 @@ ul.primary li.active a {
 		}
 		ul.menu a:link , ul.menu a:visited {
 			color:$green;
-      text-indent:-9px;
+      text-indent:-9px !important;
       padding-left:20px;
 	  &:hover{
 		  color:$brick;
@@ -902,6 +903,7 @@ ul.primary li.active a {
 	}
 }
 }
+
 @media only screen and (min-width: 1140px) {
   /* ===============
       Maximal Width
