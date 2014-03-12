@@ -5,8 +5,8 @@
 		/**
 		 * loading web fonts and external css
 		 */
-		drupal_add_css('https://fonts.googleapis.com/css?family=Open+Sans', array('type' => 'external'));
-		drupal_add_css('https://fonts.googleapis.com/css?family=Droid+Serif', array('type' => 'external'));
+		drupal_add_css('//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,700', array('type' => 'external'));
+		drupal_add_css('//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic', array('type' => 'external'));
 
 	}
 	
