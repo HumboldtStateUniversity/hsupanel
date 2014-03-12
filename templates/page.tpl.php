@@ -37,6 +37,8 @@
 							<?php endif; ?>
 						</section>	 
 					    <section class="main-content" id="main">
+
+					    	<div class="maininner">
 								<div class="banner">
 									<?php print render($page['banner_image']); ?>
 								</div>
@@ -49,7 +51,7 @@
 								<?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 		
 								<?php print render($page['content']); ?>
-		                        
+		                        </div>
 			            </section> <!-- #main-content -->
 		                <section class="side">
 							<?php if ($page['sidebar_first']): ?>

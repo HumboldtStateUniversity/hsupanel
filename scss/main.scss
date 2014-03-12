@@ -717,6 +717,23 @@ ul.primary li.active a {
   }
   .main-container {
     background: #f1f1e2;
+    .wrapper{
+      position:relative;
+    }
+  }
+  .main-content:after{
+    content: " ";
+    position:absolute;
+    height:100%;
+    right:0;
+    background:#fff;
+    top:0;
+    width: 76.59574%;
+    box-shadow: -3px 0px 5px -2px lighten($black, 30%);
+  }
+  .maininner{
+    position:relative;
+    z-index:20;
   }
   .site_name {
 	  float:left;	
@@ -786,7 +803,6 @@ ul.primary li.active a {
     border-left: auto;
     padding: 0 50px 20px 20px;
     min-height: 400px;
-	box-shadow: -3px 0px 5px -2px lighten($black, 30%);
   }
   .ie7 .main-content {
     width: 69%;
