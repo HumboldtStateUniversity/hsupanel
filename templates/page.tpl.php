@@ -11,29 +11,34 @@
 		</div><!--#masthead-->
 		        <header class="header-container clearfix">
 		            <div class="wrapper">
-					<p class="site_name"><a href="<?php print $front_page ?>"><?php print $site_name; ?></a><span class="slogan"><?php print $site_slogan;?></span></p>
+					<p class="site_name"><a href="<?php print $front_page ?>"><?php print $site_name; ?></a>
+						<?php if ($site_slogan): ?>
+							<span class="slogan"><?php print $site_slogan;?></span>
+						<?php endif; ?>	
+						</p>
 		            </div>
-					<div class="nav-horizontal">
-						<nav class="wrapper">
-							<?php print render($page['horizontal_nav']); ?>
-						</nav>
-					</div>
+					<?php if ($page['horizontal_nav']): ?>
+						<div class="nav-horizontal">
+							<nav class="wrapper">
+								<?php print render($page['horizontal_nav']); ?>
+							</nav>
+						</div>
+					<?php endif;?>
 		        </header><!-- #header-container -->	
 		        <div class="main-container">
 
 		            <div class="wrapper clearfix">
 						<div class="skip"><a href="#main">skip navigation</a></div>
 		                <section class="nav-primary">
-							<?php if ($main_menu): ?>
-								<?php print render($main_menu_expanded);?> <!-- /#main-menu -->
-							<?php else: ?>
-								<nav>
+							<?php if ($page['submenu']): ?>
+									<nav>
 									<?php print render($page['submenu']); ?>
 								</nav>
 							<?php endif; ?>
 						</section>	 
 					    <section class="main-content" id="main">
-		                    <header>
+
+					    	<div class="maininner">
 								<div class="banner">
 									<?php print render($page['banner_image']); ?>
 								</div>
@@ -46,7 +51,7 @@
 								<?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 		
 								<?php print render($page['content']); ?>
-		                        
+		                        </div>
 			            </section> <!-- #main-content -->
 		                <section class="side">
 							<?php if ($page['sidebar_first']): ?>
@@ -56,20 +61,32 @@
 							<?php endif; ?>
 		                </section><!--#side-->
 		        </div> </div><!-- #main-container -->
-	 <div class="footer-container">
+	 <section class="footer-container">
 			 <div class="circleh"></div>
             <footer class="wrapper">
 				<div class="grid">
-					<article class="col-1-3 module">
+					<article class="col-1-4 module">
 						<?php print render($page['footer_firstcolumn']); ?>
 					</article>
-					<article class="col-1-3 module">
+					<article class="col-1-4 module">
 						<?php print render($page['footer_secondcolumn']); ?>
 					</article>
-					<article class="col-1-3 module">
-							<?php print render($page['footer_thirdcolumn']); ?>
-							<?php print render($page['footer_social']); ?>
+					<article class="col-1-4 module">
+						<?php print render($page['footer_thirdcolumn']); ?>
 					</article>
+					<article class="col-1-4 module">
+							<?php print render($page['footer_fourthcolumn']); ?>
+							<?php print render($page['footer_social']); ?>
+
+
+							<?php if ($include_social && $social_links): ?>
+								<h2 class="element-invisible"><?php print t('Follow Us'); ?></h2>
+			          <div class="social-links clearfix">
+			              <?php print $social_links; ?>
+			          </div>
+		        	<?php endif; ?>
+					</article>
+					
 				</div>
             </footer>
-        </div><!--#footer-container-->
+        </section><!--#footer-container-->
