@@ -41,8 +41,22 @@ function hsupanel_form_system_theme_settings_alter(&$form, &$form_state, $form_i
   // Manually set hsupanel header images
   $header_options = array(
     t('hsupanel Headers')  => array(
-      'gold-hgh.jpg'         => t('Harry Griffith Hall & Autumn Leaves'),
-      'banner-test.jpg'         => t('Test Photo'),
+      'gold-hgh.jpg'        => t('Harry Griffith Hall & Autumn Leaves'),
+      'dunes.jpg'           => t('Buckwheat Beach Dunes'),
+      'founders.jpg'        => t('Founders Hall'),
+      'kra.jpg'             => t('Student Recreation Center'),
+      'library.jpg'         => t('Library'),
+      'quad-night.jpg'      => t('UC Quad at Night'),
+      'students.jpg'        => t('Students'),
+      'college-creek.jpg'   => t('College Creek'),
+      'canoe.jpg'           => t('Canoes'),
+      'redwoods.jpg'        => t('Redwoods'),
+      'students-beach.jpg'  => t('Students at the Beach'),
+      'bicycle.jpg'         => t('Bicycles'),
+      'students-zoo.jpg'    => t('Students at the Zoo'),
+      'jacks-fans.jpg'      => t('Lumberjack Fans'),
+      'campus-night.jpg'    => t('Campus Rooftops at Night'),
+      'bss.jpg'             => t('Behavioral & Social Sciences'),
     ),
   );
 
