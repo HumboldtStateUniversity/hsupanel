@@ -602,7 +602,7 @@ ul.primary li a {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   /*-webkit-border-radius: 3px;
   border-radius: 3px;
-  -moz-background-clip: padding; -webkit-background-clip: padding-box; 
+  -moz-background-clip: padding; -webkit-background-clip: padding-box;
   background-clip: padding-box;*/
   width: 100%;
   display: block;
@@ -660,7 +660,7 @@ ul.primary li.active a {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  
+
   ul.utility-nav {
     width: auto;
     margin: 0 auto;
@@ -750,7 +750,7 @@ ul.primary li.active a {
     z-index:20;
   }
   .site_name {
-	  float:left;	
+	  float:left;
   }
   .side {
     float: left;
@@ -843,7 +843,7 @@ ul.primary li.active a {
 //  	background: white;
   	width: 23.405%;
   	margin: auto;
-	
+
   ul.menu {
   		margin:0;
   		padding:0;
@@ -865,7 +865,7 @@ ul.primary li.active a {
   }
   ul.menu li:last-child a {
     //border-bottom:none;
- 
+
   }
   ul.menu {
     padding: 0;
@@ -887,7 +887,7 @@ ul.primary li.active a {
 	padding: 0;
 	nav ul.menu {
 		margin:0;
-		padding:$pad*2 0;		
+		padding:$pad*2 0;
 		li{
 			float:left;
 			position: relative;
